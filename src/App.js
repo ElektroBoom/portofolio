@@ -13,7 +13,7 @@ function App() {
         >
           <image>
             <source srcSet={portrait} type="image/avif" decoding="async" loading="lazy" alt="Iulian Oancea profile picture" />
-            <source srcSet={portraitFallback} type="image/webp" decoding="async" loading="lazy" alt="Iulian Oancea profile picture" />
+            <source srcSet={portraitFallback} type="image/webp" decoding="async" loading="lazy" />
             <img src={portraitFallback} className="App-logo" decoding="async" loading="lazy" alt="Iulian Oancea profile picture" />
           </image>
         </a>
