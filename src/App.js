@@ -12,9 +12,9 @@ function App() {
           rel="noopener noreferrer"
         >
           <image>
-            <source srcSet={portrait} type="image/avif" />
-            <source srcSet={portraitFallback} type="image/webp" />
-            <img src={portraitFallback} className="App-logo" decoding="async" loading="lazy" alt="Iulian Oancea profile picture" />
+            <source srcSet={portrait} type="image/avif" decoding="async" loading="lazy" alt="Iulian Oancea profile picture" />
+            <source srcSet={portraitFallback} type="image/webp" decoding="async" loading="lazy" alt="Iulian Oancea profile picture" />
+            <img src={portraitFallback} className="App-logo" decoding="async" loading="lazy" />
           </image>
         </a>
       </header>
