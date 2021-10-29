@@ -11,11 +11,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <image>
-            <source srcSet={portrait} type="image/avif" />
-            <source srcSet={portraitFallback} type="image/webp" />
-            <img src={portraitFallback} className="App-logo" decoding="async" loading="lazy" alt="" />
-          </image>
+          <div className="Shadow-Spin">
+            <image>
+              <source srcSet={portrait} type="image/avif" />
+              <source srcSet={portraitFallback} type="image/webp" />
+              <img src={portraitFallback} className="App-logo" decoding="async" loading="lazy" alt="" />
+            </image>
+          </div>
         </a>
       </header>
     </div>

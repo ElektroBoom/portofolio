@@ -2,10 +2,19 @@
   text-align: center;
 }
 
+.Shadow-Spin {
+  border-radius: 50%;
+  box-shadow: 0em 0em 2em .2em black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App-logo {
   height: 40vmin;
- 
   pointer-events: none;
+  border-radius: 50%;
+  display: block;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,10 +36,6 @@
 
 .App-link {
   color: #61dafb;
-}
-
-img {
-  border-radius: 50%;
 }
 
 @keyframes App-logo-spin {
