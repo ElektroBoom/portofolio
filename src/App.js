@@ -1,4 +1,5 @@
 import portrait from './portrait.avif';
+import portraitFallback from './portrait_fallback.webp';
 import './App.css';
 
 function App() {
@@ -10,7 +11,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={portrait} className="App-logo" alt="logo" />
+          <image>
+            <source srcSet={portrait} type="image/avif" />
+            <source srcSet={portraitFallback} type="image/webp" />
+            <img src={portraitFallback} className="App-logo" decoding="async" loading="lazy" alt="Iulian Oancea profile picture" />
+          </image>
         </a>
       </header>
     </div>
